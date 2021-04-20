@@ -151,7 +151,7 @@ main {
 .menu.active {
     width: calc(100% - 350px);
     background: var(--secondary-color);
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.15);
 }
 

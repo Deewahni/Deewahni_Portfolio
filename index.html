@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <main>  
+    <header id="home">  
         <div class="menu">
             <span class="toggle">
                 <i></i>
@@ -20,10 +20,10 @@
             </span>
             <div class="menu-content">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
@@ -33,22 +33,32 @@
             <span class="circle"></span>
             <span class="circle"></span>
             <div class="content">
-                <h2>I'm Deewahni</h2>
-                <p>a web developer</p>
+                <h1 class="l-head">I'm Deewahni</h1>
+                <p class="l-lead">a web developer</p>
             </div>
         </div>
-    </main>
+    </header>
 
     <section id="projects">
-        <aside>
-            <h1>My Projects</h1>
+        <aside class="title">
+            <h2>My Projects</h2>
         </aside>
-
-       <div class="galler">
-           
-       </div>
-
+        <div class="wrapper">
+           <div class="img-container">
+           </div>
+        </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
         $('.toggle').on('click', function(){

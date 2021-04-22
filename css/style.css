@@ -21,7 +21,7 @@ html,body {
     font-family: 'Baloo 2', cursive;
 }
 
-h1 {
+h1, h2 {
     font-family: var(--text-heading);
 }
 
@@ -300,26 +300,63 @@ header{
 /* PROJECTS SECTION */
 #projects {
     width:100vw;
+    height: auto;
+    margin: 20px;
     display: flex;
-    margin: 20px 0;
 }
+
 
 .title {
     writing-mode:vertical-lr;
     transform: rotate(180deg);
     padding: 10px;
-    background: wheat;
     height: auto;
     display: flex;
     justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.65);
+    border-left: 3px wheat solid;
+    letter-spacing: 5px;
 }
 
 .wrapper {
     margin-left: 10px;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.img-container .content {
+    position: relative;
+    width: 45%;
+    height: 45%;
+    background: var(--primary-color);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.img-container .content h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+
+.circle-content {
+    position: absolute;
+    border: 1px white solid;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
 }
 
 .img-container {
-    width: 400px;
-    height: 400px;
-    background: #f88f01;
+    width: 350px;
+    height: 350px;
+    background: orange url('../images/img.jpg') no-repeat center center/cover;
+    display: grid;
+    place-items: center;
+    margin: 2px;
 }

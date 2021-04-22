@@ -303,6 +303,7 @@ header{
     height: auto;
     margin: 20px;
     display: flex;
+    margin-top: 100px;
 }
 
 
@@ -319,11 +320,12 @@ header{
 }
 
 .wrapper {
-    margin-left: 10px;
-    width:100%;
+    margin-left: 50px;
+    width:80%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 
@@ -332,11 +334,53 @@ header{
     position: relative;
     width: 45%;
     height: 45%;
+    background: rgba(248, 143, 1, 0.6);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.img-container:hover .content{
+    transform: rotateY(180deg);
+}
+
+.img-container .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: var(--primary-color);
     display: grid;
     place-items: center;
     border-radius: 50%;
+    transition: background 1s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    padding: 20px;
 }
+
+.back div {
+    width: 100%;
+    height: 100%;
+    color: var(--secondary-color);
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .back div h2 {
+    font-size: 1rem;
+}
+
 
 .img-container .content h2 {
     font-size: 1.5rem;
@@ -352,11 +396,20 @@ header{
     border-radius: 50%;
 }
 
-.img-container {
+.img-container:nth-child(odd){
     width: 350px;
     height: 350px;
     background: orange url('../images/img.jpg') no-repeat center center/cover;
     display: grid;
-    place-items: center;
-    margin: 2px;
+    place-items: center; 
 }
+
+.img-container:nth-child(even) {
+    width: 350px;
+    height: 350px;
+    background: orange url('../images/code.jpg') no-repeat center center/cover;
+    display: grid;
+    place-items: center;
+}
+
+

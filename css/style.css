@@ -49,6 +49,18 @@ img{
     font-weight: 200;
 }
 
+.title {
+    writing-mode:vertical-lr;
+    transform: rotate(180deg);
+    padding: 10px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.65);
+    border-left: 3px wheat solid;
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+}
 
 /* showcase */
 header{
@@ -175,8 +187,10 @@ header{
     width: calc(100% - 350px);
     background: var(--secondary-color);
     border-radius: 5px;
-    box-shadow: 0px 4px 7px rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 4px 7px rgba(255, 255, 255, 0.18),
+    0px -4px 7px rgba(255, 255, 255, 0.2);
     transform: scale(1);
+    z-index: 100000 !important;
 }
 
 .menu.active .menu-content *{
@@ -301,22 +315,8 @@ header{
 #projects {
     width:100vw;
     height: auto;
-    margin: 20px;
+    margin: 100px 20px;
     display: flex;
-    margin-top: 100px;
-}
-
-
-.title {
-    writing-mode:vertical-lr;
-    transform: rotate(180deg);
-    padding: 10px;
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-    color: rgba(0, 0, 0, 0.65);
-    border-left: 3px wheat solid;
-    letter-spacing: 5px;
 }
 
 .wrapper {
@@ -412,4 +412,60 @@ header{
     place-items: center;
 }
 
+
+/* ABOUT SECTION */
+#about {
+    background: var(--primary-color);
+    margin: 100px 0px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+}
+
+#about .title {
+    color: var(--secondary-color);
+}
+.about-box {
+    display: flex;
+}
+.about-desc {
+    color: whitesmoke;
+    width: 50%;
+    margin: 50px;
+    letter-spacing: 1px;
+}
+
+.about-desc h1 {
+    font-size: 5rem;
+}
+
+.about-box .picture-box {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+}
+
+.my-picture {
+    background: url(../images/dee1.jpg) no-repeat center center/cover;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+    border: 10px var(--primary-color) solid;
+    position: relative;
+    z-index: 10;
+}
+
+.my-picture::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: inherit;
+    height: inherit;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.25;
+    mix-blend-mode:overlay ;
+}
 

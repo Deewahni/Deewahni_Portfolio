@@ -420,6 +420,7 @@ header{
     padding: 20px;
     position: relative;
     display: flex;
+    justify-content: center;
 }
 
 #about .title {
@@ -443,6 +444,7 @@ header{
     position: relative;
     width: 50%;
     padding: 20px;
+    background: wheat;
 }
 
 .my-picture {
@@ -460,12 +462,20 @@ header{
     content: '';
     position: absolute;
     left: 0;
-    top: -2px;
-    width: inherit;
-    height: inherit;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-color);
     border-radius: 50%;
-    opacity: 0.25;
+    opacity: 0.3;
     mix-blend-mode:overlay ;
 }
 
+
+.highlights {
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(45deg,#cd0a0a,#d44000,#f88f01);
+    position: absolute;
+    right: 20px;
+}

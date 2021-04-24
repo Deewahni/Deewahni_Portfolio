@@ -416,7 +416,7 @@ header{
 /* ABOUT SECTION */
 #about {
     background: var(--primary-color);
-    margin: 100px 0px;
+    margin: 100px auto;
     padding: 20px;
     position: relative;
     display: flex;
@@ -440,42 +440,52 @@ header{
     font-size: 5rem;
 }
 
-.about-box .picture-box {
+.picture-box {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    padding: 20px;
-    background: wheat;
 }
 
 .my-picture {
     background: url(../images/dee1.jpg) no-repeat center center/cover;
     width: 300px;
     height: 300px;
-    margin: auto;
     border-radius: 50%;
     border: 10px var(--primary-color) solid;
-    position: relative;
-    z-index: 10;
+    z-index: 2;
 }
-
-.my-picture::before {
-    content: '';
+.up {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    opacity: 0.3;
-    mix-blend-mode:overlay ;
+    top: 80px;
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(30deg,#be0000, #d44000,#f88f01);
+    transform: perspective(900px) translateZ(100px);
+    z-index: 1;
+}
+.down {
+    position: absolute;
+    bottom: 50px;
+    width: 400px;
+    height: 150px;
+    background: linear-gradient(-30deg,#be0000, #d44000,#f88f01);
+    transform: perspective(900px) translateZ(100px);
+    z-index: 1;
 }
 
 
 .highlights {
-    width: 400px;
-    height: 150px;
-    background: linear-gradient(45deg,#cd0a0a,#d44000,#f88f01);
     position: absolute;
-    right: 20px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: -80px;
+    width: 60%;
+    height: 20%;
+    position:absolute;
+
+    background: indianred;
 }

@@ -450,31 +450,50 @@ header{
 
 .my-picture {
     background: url(../images/dee1.jpg) no-repeat center center/cover;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 10px var(--primary-color) solid;
-    z-index: 2;
+    z-index: 1000;
 }
 .up {
     position: absolute;
-    top: 80px;
-    width: 400px;
-    height: 150px;
+    top: -3px;
+    width: 100%;
+    height: 50%;
     background: linear-gradient(30deg,#be0000, #d44000,#f88f01);
     transform: perspective(900px) translateZ(100px);
     z-index: 1;
+    overflow: hidden;
 }
 .down {
     position: absolute;
-    bottom: 50px;
-    width: 400px;
-    height: 150px;
+    bottom: -3px;
+    width: 100%;
+    height: 250px;
     background: linear-gradient(-30deg,#be0000, #d44000,#f88f01);
     transform: perspective(900px) translateZ(100px);
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    overflow: hidden;
 }
 
+.up svg {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    height: 70%;
+}
+
+.down svg {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    transform: perspective(900px) translateZ(100px);
+}
 
 .highlights {
     position: absolute;

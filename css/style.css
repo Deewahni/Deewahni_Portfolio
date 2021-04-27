@@ -440,6 +440,10 @@ header{
     font-size: 5rem;
 }
 
+.about-desc p {
+    font-size: 1rem;
+    width: 90%;
+}
 .picture-box {
     position: relative;
     display: flex;
@@ -458,7 +462,7 @@ header{
 }
 .up {
     position: absolute;
-    top: -3px;
+    top: 0;
     width: 100%;
     height: 50%;
     background: linear-gradient(30deg,#be0000, #d44000,#f88f01);
@@ -485,7 +489,7 @@ header{
     z-index: 1;
     position: absolute;
     bottom: 0px;
-    height: 70%;
+  
 }
 
 .down svg {
@@ -494,6 +498,7 @@ header{
     top: 0px;
     transform: perspective(900px) translateZ(100px);
 }
+
 
 .highlights {
     position: absolute;

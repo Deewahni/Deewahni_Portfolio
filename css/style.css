@@ -19,6 +19,7 @@ html,body {
     height: 100%;
     overflow-x: hidden;
     font-family: 'Baloo 2', cursive;
+    background: #fcecdd;
 }
 
 h1, h2 {
@@ -430,7 +431,7 @@ header{
     display: flex;
 }
 .about-desc {
-    color: whitesmoke;
+    color: #eeeeee;
     width: 50%;
     margin: 50px;
     letter-spacing: 1px;
@@ -508,8 +509,26 @@ header{
     margin-right:auto;
     bottom: -80px;
     width: 60%;
-    height: 20%;
+    height: auto;
     position:absolute;
+    z-index: 10000;
+    background: var(--secondary-color);
+}
 
-    background: indianred;
+.highlights ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+}
+
+.highlights ul li {
+    padding: 20px;
+    width: 30%;
+    color: var(--accent-color);
+}
+
+.highlights p {
+    font-size: 0.9rem;
 }

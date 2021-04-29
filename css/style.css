@@ -455,8 +455,8 @@ header{
 
 .my-picture {
     background: url(../images/dee1.jpg) no-repeat center center/cover;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 10px var(--primary-color) solid;
     z-index: 1000;
@@ -536,7 +536,7 @@ header{
 
 /* Resume Section */
 #resume {
-    margin: 250px 0 50px 20px;
+    margin: 100px 0 100px 20px;
     height: 40vh;
     display: flex;
 }
@@ -547,7 +547,7 @@ header{
     justify-content: first baseline;
     align-items: center;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 #resume .wrapper p {
@@ -567,4 +567,24 @@ header{
 #resume .wrapper button:hover {
     border: 2px var(--accent-color) solid;
     color: var(--accent-color);
+}
+
+
+/* Footer Contact Section */
+#contact {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    background: var(--accent-color);
+    padding: 20px;
+    
+}
+
+.socmed a,  .contact i{
+   margin: 0 10px;
+   transition: color .5s ease;
+}
+
+#contact a:hover {
+    color:var(--secondary-color);
 }

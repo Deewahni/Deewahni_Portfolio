@@ -1,0 +1,36 @@
+/* Projects */
+.wrapper {
+    width: 100%;
+}
+
+.img-container:nth-child(odd){
+    width:250px;
+    height: 250px;
+}
+
+.img-container .content {
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+.img-container .content {
+    width: 70%;
+    height: 70%;
+}
+
+
+/* About */
+.about-desc h1 {
+    font-size: 4rem;
+}
+
+.about-desc p {
+    font-size: 0.95rem;
+}
+
+
+.highlights {
+    width: 85%;
+}
+

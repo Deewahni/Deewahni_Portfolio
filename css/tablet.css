@@ -1,4 +1,9 @@
 @media screen and (min-width: 700px)  {
+    
+
+    header {
+        height: 70vh;
+    }
     .wrapper {
         width: 100%;
         justify-content: center;
@@ -46,12 +51,15 @@
 
     /* Resume */
     #resume {
-        margin: 300px 0 100px;
+        margin-top: 300px;
+        height: 35vh;
     }
 
-    #resume .wrapper {
-        padding-top: 30px;
-        display: flex;
-        justify-content: start;
+
+    #contact {
+        margin: 400px 0;
+        padding: 50px ;
     }
+
+  
 }

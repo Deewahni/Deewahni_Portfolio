@@ -1,0 +1,85 @@
+@media screen and (max-width: 500px)  {
+
+header .square {
+    width: 250px;
+    height: 250px;
+}
+
+header .l-head {
+    font-size: 2rem;
+}
+
+header .l-lead {
+    font-size: 0.9rem;
+}
+
+header .menu.active {
+    height: auto;
+    padding: 20px;
+}
+
+.menu.active ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu.active li {
+    margin: 5px 0;
+}
+
+body .title {
+    padding: 0;
+}
+
+body #projects, 
+body #about,
+body  #resume,
+#projects .wrapper,
+#about .wrapper,
+#resume .wrapper
+ {
+     margin-left: 0;
+    padding-left: 5px;
+}
+
+
+
+#projects .wrapper,
+#about .about-desc,
+#resume .wrapper {
+    margin-left: 0px;
+}
+
+#projects .img-container {
+    width: 90%;
+}
+
+.about-box .my-picture {
+    width: 300px;
+    height: 300px;
+}
+
+#about h1 {
+    font-size: 3rem;
+}
+#about p {
+    font-size: 0.85rem;
+}
+
+.highlights i {
+    font-size: 2.5rem;
+}
+
+
+body #contact {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+#contact div {
+    margin: 20px;
+}
+
+
+}

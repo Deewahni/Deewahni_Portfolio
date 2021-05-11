@@ -166,7 +166,22 @@ header{
     }
 }
 
-
+.btn-main {
+    display: inline-block;
+    border: 1px var(--accent-color) solid;
+    color: whitesmoke;
+    margin-top: 15px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+}
+.square:hover .btn-main {
+    border:1px white solid;
+}
+.btn-main:hover {
+    background: wheat;
+    color: var(--accent-color);
+}
 /* Navigation */
 
 .menu{

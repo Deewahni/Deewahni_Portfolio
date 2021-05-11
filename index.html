@@ -13,6 +13,13 @@ crossorigin="anonymous"></script>
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/tablet.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Deewahni's Portfolio</title>
+
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+        }
+    </style>
+
 </head>
 <body>
     
@@ -222,20 +229,20 @@ crossorigin="anonymous"></script>
         });
 
         // Smooth Scrolling
-        $ ('a').on('click', function(event) {
-            if (this.hash !=='') {
-                event.preventDefault();
+        // $ ('a').on('click', function(event) {
+        //     if (this.hash !=='') {
+        //         event.preventDefault();
 
-                const hash = this.hash;
+        //         const hash = this.hash;
 
-                $('html, body').animate(
-                {
-                    scrollTop: $(hash).offset().top - 100
-                },
-                800
-                );
-            }
-        });
+        //         $('html, body').animate(
+        //         {
+        //             scrollTop: $(hash).offset().top - 100
+        //         },
+        //         800
+        //         );
+        //     }
+        // });
 
 
 

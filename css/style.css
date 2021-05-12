@@ -20,6 +20,7 @@ html,body {
     overflow-x: hidden;
     font-family: 'Baloo 2', cursive;
     background: #fcecdd;
+    scroll-behavior: smooth;
 }
 
 h1, h2 {

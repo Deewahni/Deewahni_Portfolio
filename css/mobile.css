@@ -55,8 +55,19 @@ body  #resume,
 }
 
 .about-box .my-picture {
+    position: relative;
+    left: 20px;
     width: 300px;
     height: 300px;
+}
+
+.my-picture::after {
+    display: none;
+}
+.about-box .my-picture::after  {
+    left: 15px;
+    width: 250px;
+    height: 250px;
 }
 
 #about h1 {
@@ -66,11 +77,23 @@ body  #resume,
     font-size: 0.85rem;
 }
 
+#about .highlights  {
+    width: 100%;
+    bottom: -350px;
+}
+
+#about .highlights ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .highlights i {
     font-size: 2.5rem;
 }
 
-
+body #resume {
+    position:relative;
+    top: 50px;
+}
 body #contact {
     display: flex;
     flex-direction: column-reverse;

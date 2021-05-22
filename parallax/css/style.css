@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #cfdac8;
-  font-family: 'Quicksand', sans-serif;
+  background: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -86,7 +86,7 @@ a {
 
 .durian div {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -94,5 +94,82 @@ a {
 
 .durian div:first-child {
   z-index: 2;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.anatomy {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 20px 0;
+  color: #4a503d;
+}
+
+.anatomy h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.anatomy hr {
+  background-color: #adb36e;
+  height: 5px;
+}
+
+.anatomy p, .anatomy ul {
+  margin-top: 10px;
+  font-size: .85rem;
+}
+
+.anatomy .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
+}
+
+.anatomy .parts {
+  position: relative;
+  background: url(/parallax/img/durian-a.png) no-repeat center center/cover;
+  width: 100%;
+  height: calc(100vh - 5vh);
+}
+
+.anatomy .parts div {
+  position: absolute;
+  font-weight: 700;
+}
+
+.anatomy .parts i {
+  color: aqua;
+}
+
+.anatomy .stalk {
+  top: 95px;
+  left: 32%;
+}
+
+.anatomy .shell {
+  top: 200px;
+  right: 15%;
+}
+
+.anatomy .meat {
+  top: 300px;
+  left: 15%;
+}
+
+.anatomy .partition {
+  bottom: 30%;
+  left: 52%;
+}
+
+.anatomy .nutrition-facts li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3;
 }
 /*# sourceMappingURL=style.css.map */

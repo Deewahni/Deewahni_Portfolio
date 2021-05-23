@@ -23,6 +23,13 @@ a {
   text-decoration: none;
 }
 
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #4a503d;
+}
+
 .showcase {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,12 +115,6 @@ section {
   color: #4a503d;
 }
 
-.anatomy h1 {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 900;
-}
-
 .anatomy hr {
   background-color: #adb36e;
   height: 5px;
@@ -171,5 +172,29 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 3;
+}
+
+.durian-variety {
+  margin-top: 100px;
+  width: 100%;
+  height: 100vh;
+}
+
+.durian-variety .sort {
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.durian-variety .durian-image, .durian-variety .desc {
+  width: 50%;
+  margin: 20px;
+}
+
+.durian-variety .desc {
+  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

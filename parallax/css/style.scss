@@ -9,12 +9,13 @@ $primary-color: #adb36e;
 body {
     background: #f4f4f4;
     font-family: 'Poppins', sans-serif;
-    
+    scroll-behavior: smooth;    
 }
 
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 ul{
@@ -29,7 +30,7 @@ a {
     text-align: center;
     font-size: 3rem;
     font-weight: 900;
-    color: #4a503d;
+    color: #9a9e6cc4;
 }
 
 
@@ -110,6 +111,7 @@ section {
 }
 
 .anatomy {
+    position: relative;
     width: 100%;
     height: 100vh;
     padding: 50px 20px 0;
@@ -122,7 +124,7 @@ section {
 
     p, ul {
         margin-top: 10px;
-        font-size: .85rem;
+        font-size: .8rem;
     }
 
     .container {
@@ -133,47 +135,59 @@ section {
  
     .parts {
         position: relative;
-        background: url(/parallax/img/durian-a.png) no-repeat center center/cover;
+        background: url(/parallax/img/durian.png) no-repeat center center/cover;
+        transform: scale(.8);
         width: 100%;
-        height: calc(100vh - 5vh);
+        height: calc(100vh - 10vh);
 
+        
         div{
             position: absolute;
             font-weight: 700;
+            color: #8e86cc;
             
         }
 
         i {
-            color: aqua;
+            color: #cacf96c4;
+            animation: dot 1.5s 6 linear;
+        }
+
+
+        @keyframes dot {
+            100% {
+                color: #4f3961;
+            }
         }
 
         
     }
 
     .stalk {
-        top: 95px;
-        left: 32%;
-    }
-
-    .shell {
-        top: 200px;
-        right: 15%;
-    }
-
-    .meat {
-        top: 300px;
+        top: 80px;
         left: 15%;
     }
 
-    .partition{
+    .shell {
         bottom: 30%;
-        left: 52%;
+        left: 20%;
     }
 
+    .meat {
+        top: 250px;
+        left: 20%;
+    }
+
+    .partition{
+        bottom: 20%;
+        right: 50px;
+    }
+
+    .nutrition-facts {
+        transform: translateY(50%);
+    }
     .nutrition-facts li {
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 3;
+        line-height: 2;
     }
 }
 
@@ -181,6 +195,7 @@ section {
     margin-top: 100px;
     width: 100%;
     height: 100vh;
+
     .sort {
         padding: 50px;
         width: 100%;
@@ -193,7 +208,28 @@ section {
         margin: 20px;
     }
 
+    .durian-image {
+        padding: 70px;
+        background: #adb36e;
+    }
+
     .desc {
-        padding-top: 20px;
+        position: relative;
+        padding: 20px;
+
+        p{
+            z-index: 10;
+        }
+    }
+
+    .name-style {
+        position:absolute;
+        left: 0px;
+        bottom: 0px;
+        writing-mode: vertical-lr;
+        font-weight: 900;
+        font-size: 2.8rem;
+        color: #e7e9d5;
+        z-index: -1;
     }
 }

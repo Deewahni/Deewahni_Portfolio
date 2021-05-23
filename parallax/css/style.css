@@ -8,11 +8,14 @@
 body {
   background: #f4f4f4;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 ul {
@@ -27,7 +30,7 @@ a {
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
-  color: #4a503d;
+  color: #9a9e6cc4;
 }
 
 .showcase {
@@ -109,6 +112,7 @@ section {
 }
 
 .anatomy {
+  position: relative;
   width: 100%;
   height: 100vh;
   padding: 50px 20px 0;
@@ -122,7 +126,7 @@ section {
 
 .anatomy p, .anatomy ul {
   margin-top: 10px;
-  font-size: .85rem;
+  font-size: .8rem;
 }
 
 .anatomy .container {
@@ -134,44 +138,64 @@ section {
 
 .anatomy .parts {
   position: relative;
-  background: url(/parallax/img/durian-a.png) no-repeat center center/cover;
+  background: url(/parallax/img/durian.png) no-repeat center center/cover;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   width: 100%;
-  height: calc(100vh - 5vh);
+  height: calc(100vh - 10vh);
 }
 
 .anatomy .parts div {
   position: absolute;
   font-weight: 700;
+  color: #8e86cc;
 }
 
 .anatomy .parts i {
-  color: aqua;
+  color: #cacf96c4;
+  -webkit-animation: dot 1.5s 6 linear;
+          animation: dot 1.5s 6 linear;
+}
+
+@-webkit-keyframes dot {
+  100% {
+    color: #4f3961;
+  }
+}
+
+@keyframes dot {
+  100% {
+    color: #4f3961;
+  }
 }
 
 .anatomy .stalk {
-  top: 95px;
-  left: 32%;
-}
-
-.anatomy .shell {
-  top: 200px;
-  right: 15%;
-}
-
-.anatomy .meat {
-  top: 300px;
+  top: 80px;
   left: 15%;
 }
 
-.anatomy .partition {
+.anatomy .shell {
   bottom: 30%;
-  left: 52%;
+  left: 20%;
+}
+
+.anatomy .meat {
+  top: 250px;
+  left: 20%;
+}
+
+.anatomy .partition {
+  bottom: 20%;
+  right: 50px;
+}
+
+.anatomy .nutrition-facts {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .anatomy .nutrition-facts li {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 3;
+  line-height: 2;
 }
 
 .durian-variety {
@@ -194,7 +218,30 @@ section {
   margin: 20px;
 }
 
+.durian-variety .durian-image {
+  padding: 70px;
+  background: #adb36e;
+}
+
 .durian-variety .desc {
-  padding-top: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.durian-variety .desc p {
+  z-index: 10;
+}
+
+.durian-variety .name-style {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #e7e9d5;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

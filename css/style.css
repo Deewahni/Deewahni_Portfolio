@@ -338,7 +338,7 @@ header{
 }
 
 .wrapper {
-    margin-left: 50px;
+    margin-left: 100px;
     width:80%;
     height: auto;
     display: grid;
@@ -359,6 +359,7 @@ header{
     transition: all 1s ease;
     transform-style: preserve-3d;
     perspective: 1000px;
+    text-align: center;
 }
 
 .img-container:hover .content{
@@ -393,6 +394,8 @@ header{
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    transform: translateZ(50px);
+    backface-visibility: hidden;
 }
 
 .content .back div h2 {
@@ -404,6 +407,10 @@ header{
     font-size: 1.5rem;
     color: var(--secondary-color);
     letter-spacing: 2px;
+}
+
+.img-container .content p {
+    font-size: 0.75rem;
 }
 
 .circle-content {
@@ -421,13 +428,11 @@ header{
     place-items: center;
 }
 
-.img-container:nth-child(odd){  
-    background: orange url('../images/img.jpg') no-repeat center center/cover;
+.img-container:nth-child(1){  
+    background: orange url('../images/Employee Account/Individual\ Account\ --\ Landing\ Page.png') no-repeat center center/cover;
 }
 
-.img-container:nth-child(even) {
-    background: orange url('../images/code.jpg') no-repeat center center/cover;
-}
+
 
 
 /* ABOUT SECTION */
@@ -465,6 +470,7 @@ header{
     margin-top: 50px;
     font-size: 1rem;
     width: 75%;
+    line-height: 2;
 }
 .picture-box {
     position: relative;

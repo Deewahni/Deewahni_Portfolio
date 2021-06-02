@@ -431,9 +431,12 @@ header{
 }
 
 .img-container:nth-child(1){  
-    background: orange url('../images/Employee Account/Individual\ Account\ --\ Landing\ Page.png') no-repeat center center/cover;
+    background: orange url('../images/Employee_Account/LandingPage.png') no-repeat center center/cover;
 }
 
+.img-container:nth-child(2){  
+    background: orange url('../images/Durian_site/durian-header.png') no-repeat center center/cover;
+}
 
 
 
@@ -495,7 +498,7 @@ header{
     left: 10px;
     width: 340px;
     height: 340px;
-    border: 20px solid;
+    border: 20px dotted;
     border-color:  transparent #d44000;
     border-radius: 50%;
     transform: rotate(90deg);

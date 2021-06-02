@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Management System for employees">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Durian King</title>
+    <title>Employment Information Management System</title>
 </head>
+
+
 
 
 <body>
@@ -20,23 +25,23 @@
             </span>
             <div class="menu-content">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="../index.html#home">HOME</a></li>
+                    <li><a href="../index.html#projects">PROJECTS</a></li>
+                    <li><a href="../index.html#about">ABOUT</a></li>
+                    <li><a href="../index.html#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="gallery">
             <div class="gallery-container-1">
-                <img src="/images/Durian_site/durian-header.png" alt="durian ">
+                <img src="images/Durian_site/durian-header.png" alt="landing page">
             </div>
             <div class="galler-container">
-                <img src="/images/Durian_site/durian-anatomy.png" alt="anatomy picture">
+                <img src="/images/Durian_site/durian-anatomy.png" alt="profile page">
             </div>
             <div class="gallery-container">
-                <img src="/images/Durian_site/durian-variety.png" alt="variety of durian">
+                <img src="/images/Durian_site/durian-variety.png" alt="employee files">
             </div>
         </div>
 
@@ -46,20 +51,37 @@
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
-                <li>GSAP</li>
-            </ul>   
+                <li>Javascript</li>
+                <li>GSAP Plugin</li>
+            </ul>
+            
         </aside>
     </main>
 
-
+    
 
     <article>
-        <h1 class="page-heading">Durian Parallax Website</h1>
+        <h1 class="page-heading">The Durian Fruit</h1>
         <a class="web-link" href="#">Go to Website</a>
         <p>
-           This website shows information about the marvelous fruit, Durian. Some of the many varieties were included in this website.
-           This is created with the use of HTML, CSS, and GSAP for its animation.
+            This website shows information about the marvelous fruit, Durian. Some of the many varieties were included
+            in this website.
+            This is created with the use of HTML, CSS, and GSAP for its animation. It was my first time creating a
+            website using GSAP to create animation.
+            It was such a thrill to learn such a plugin. I had hard time manipulating the controls to make it the way I
+            want it done, it sure was tough. But through reseach and watching a bunch of tutorials, I have made it
+            through.
         </p>
     </article>
+
+    <script>
+        // hamburger menu toggle on and off
+        $('.toggle').on('click', function () {
+
+            $('.menu').toggleClass('active');
+        });
+
+    </script>
 </body>
+
 </html>
